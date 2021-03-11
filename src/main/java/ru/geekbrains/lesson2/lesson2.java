@@ -1,4 +1,4 @@
-package lesson2;
+package ru.geekbrains.lesson2;
 
 public class lesson2 {
 
@@ -58,3 +58,5 @@ public class lesson2 {
         System.out.println("Минимальный элемент находится в массиве под индексом " + indMin + " со значением  = " + min);
     }
 }
+
+
