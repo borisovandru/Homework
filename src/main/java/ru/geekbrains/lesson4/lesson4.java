@@ -46,7 +46,7 @@ public class lesson4 {
                     + email + "\n-"
                     + phone + "\n-"
                     + salary + "\n-"
-                    + age);
+                    + age);;
         }
     }
 }
