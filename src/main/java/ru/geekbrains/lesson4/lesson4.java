@@ -18,33 +18,35 @@ public class lesson4 {
             if (employee.getAge()>40)
                 System.out.println(employee);
     }
-}
-class Employee {
-    private final String name;
-    private final String position;
-    private final String email;
-    private final String phone;
-    private final int salary;
-    private final int age;
 
-    public Employee(String name, String position, String email, String phone, int salary, int age) {
-        this.name = name;
-        this.position = position;
-        this.email = email;
-        this.phone = phone;
-        this.salary = salary;
-        this.age = age;
-    }
-    public int getAge() {
-        return age;
-    }
+    static class Employee {
+        private final String name;
+        private final String position;
+        private final String email;
+        private final String phone;
+        private final int salary;
+        private final int age;
 
-    public String toString(){
-        return(name+ "\n-"
-                +position+ "\n-"
-                +email+ "\n-"
-                +phone+ "\n-"
-                +salary+ "\n-"
-                +age);
+        public Employee(String name, String position, String email, String phone, int salary, int age) {
+            this.name = name;
+            this.position = position;
+            this.email = email;
+            this.phone = phone;
+            this.salary = salary;
+            this.age = age;
+        }
+
+        public int getAge() {
+            return age;
+        }
+
+        public String toString() {
+            return (name + "\n-"
+                    + position + "\n-"
+                    + email + "\n-"
+                    + phone + "\n-"
+                    + salary + "\n-"
+                    + age);
+        }
     }
 }
