@@ -1,38 +1,38 @@
 package ru.geekbrains.lesson5;
 
-public class Animal implements AnimalInterface  {
-    private double animalDistanceRun, animalDistanceJump, animalDistanceSwim;
+public class Animal {
+    private static int counter;
+    private final String type;
+    private final String name;
+    private final int maxRunDistance;
+    private final int maxSwimDistance;
 
-    Animal(double animalDistanceRun, double animalDistanceJump, double animalDistanceSwim) {
-        this.animalDistanceRun = animalDistanceRun;
-        this.animalDistanceJump = animalDistanceJump;
-        this.animalDistanceSwim = animalDistanceSwim;
+    public Animal(String type, String name, int maxRun, int maxSwim) {
+        this.type = type;
+        this.name = name;
+        this.maxRunDistance = maxRun;
+        this.maxSwimDistance = maxSwim;
+        counter++;
     }
 
-    @Override
-    public boolean run(double value) {
-        return animalDistanceRun > value;
+    public void run(int distance) {
+        if (distance <= maxRunDistance) {
+            System.out.printf("%s %s run %d meters\r\n", type, name, distance);
+        } else System.out.printf("%s %s could not run %d meters\r\n", type, name, distance);
     }
 
-    @Override
-    public boolean jump(double value) {
-        return animalDistanceJump > value;
+    public void swim(int distance) {
+        if (distance <= maxSwimDistance) {
+            System.out.printf("%s %s swam %d meters\r\n", type, name, distance);
+        } else System.out.printf("%s %s could not swim %d meters\r\n", type, name, distance);
     }
 
-    @Override
-    public boolean swim(double value) {
-        return animalDistanceSwim > value;
+    public String getName() {
+        return name;
     }
 
-    double getAnimalDistanceRun() {
-        return animalDistanceRun;
+    public static int getCounter() {
+        return counter;
     }
 
-    double getAnimalDistanceJump() {
-        return animalDistanceJump;
-    }
-
-    double getAnimalDistanceSwim() {
-        return animalDistanceSwim;
-    }
 }
