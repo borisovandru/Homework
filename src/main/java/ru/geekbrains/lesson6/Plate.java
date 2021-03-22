@@ -1,27 +1,17 @@
 package ru.geekbrains.lesson6;
 
 public class Plate {
-    private int food;
-
-    public Plate(int n) {
-        food = n < 0 ? -n : n;
-        info();
+    public int food;
+    public Plate(int food) {
+        this.food = food;
     }
-
-    public int getFood() {
-        return food;
+    public void decreaseFood(int n) {
+        food -= n;
     }
-
-    boolean decreaseFood(int n) {
-        if (n > food) {
-            return false;
-        } else {
-            food -= n;
-            return true;
-        }
+    public void increaseFood(int x) {
+        food += x;
     }
-
     public void info() {
-        System.out.printf("В тарелке %d единиц еды\n\n", food);
+        System.out.println("Всего еды: " + food);
     }
 }
