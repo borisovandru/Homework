@@ -11,7 +11,7 @@ package ru.geekbrains.lesson6;
 
 import java.util.Scanner;
 
-public class MainClass {
+public class Feeding {
     public static void main(String[] args) {
         Cat[] pets = {
                 new Cat("Barsik", 2),
