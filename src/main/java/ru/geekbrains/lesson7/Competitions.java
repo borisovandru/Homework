@@ -19,16 +19,16 @@ public class Competitions {
         Random rand = new Random();
         Actions[] actions = new Actions[3];
 
-        int distance = rand.nextInt(10);
-        int heigth = rand.nextInt(10);
+        int distance = rand.nextInt(20);
+        int heigth = rand.nextInt(20);
         actions[0] = new Human("Ivan", distance, heigth);
 
         distance = rand.nextInt(10);
         heigth = rand.nextInt(10);
         actions[1] = new Robot("Petr", distance, heigth);
 
-        distance = rand.nextInt(10);
-        heigth = rand.nextInt(10);
+        distance = rand.nextInt(5);
+        heigth = rand.nextInt(5);
         actions[2] = new Cat("Tom", distance, heigth);
 
         Barrier[] barriers = new Barrier[6];
@@ -59,7 +59,7 @@ public class Competitions {
             if (result) {
                 System.out.println("Successfully!!");
             } else {
-                System.out.println("unsuccessfully!!");
+                System.out.println("Unsuccessfully!!");
             }
         }
     }

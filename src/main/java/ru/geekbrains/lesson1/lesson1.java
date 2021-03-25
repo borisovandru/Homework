@@ -5,7 +5,7 @@ public class lesson1 {
     public static void main(String[] args) {
         //1. Написать метод вычисляющий выражение a * (b + (c / d)) и возвращающий результат с плавающей точкой,
         //где a, b, c, d – целочисленные входные параметры этого метода;
-        int a = 3;
+        int a = 7;
         int b = 7;
         int c = 3;
         int d = 8;
