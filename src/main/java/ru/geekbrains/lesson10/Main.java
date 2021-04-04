@@ -9,10 +9,10 @@ class Main {
     private static final String FILE_NAME2;
 
     static {
-        FILE_NAME2 = " C: JAVA/Java2Lesson3Homework3.txt ";
+        FILE_NAME2 = " a ";
     }
 
-    private static final String FILE_NAME1 = " Java2Lesson3Homework3.txt ";
+    private static final String FILE_NAME1 = " b ";
 
     /**
      * 1. Создать массив с набором слов (10-20 слов, должны встречаться повторяющиеся). Найти и вывести список
