@@ -18,10 +18,10 @@
         </Console>
     </Appenders>
 
-<Loggers>
-<Root level="info">
-    <AppenderRef ref="STDOUT"/>
-    <AppenderRef ref="FILE1"/>
-</Root>
-</Loggers>
-    </Configuration>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="STDOUT"/>
+            <AppenderRef ref="FILE1"/>
+        </Root>
+    </Loggers>
+</Configuration>

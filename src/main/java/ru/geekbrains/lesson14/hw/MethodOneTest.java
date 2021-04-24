@@ -1,18 +1,13 @@
 package ru.geekbrains.lesson14.hw;
 
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.util.Arrays;
 import java.util.Collection;
 
-@RunWith(Parameterized.class)
 
 public class MethodOneTest {
-    @Parameterized.Parameters
     public static Collection<Object[]> data() {
         return Arrays.asList(new int[][][]{
                 {{1, 5, 4, 6}, {6}},
@@ -25,6 +20,7 @@ public class MethodOneTest {
     }
 
     private final int[] x;
+
     private final int[] result;
 
     public MethodOneTest(int[] x, int[] result) {
@@ -33,9 +29,7 @@ public class MethodOneTest {
     }
 
     private static Method method;
-
-
-    @Before
+    
     public void init() {
         System.out.println("init Method");
         method = new Method();
@@ -43,7 +37,7 @@ public class MethodOneTest {
 
     @Test
     public void massTestAdd() {
-        Assert.assertArrayEquals(result, method.myMethodOne(x));
+        Assert.assertEquals(result, method.myMethodOne(x));
     }
 
 }

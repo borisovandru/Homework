@@ -1,15 +1,13 @@
 package ru.geekbrains.lesson14.hw;
 
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class MethodTwoTest {
 
     private static Method method;
 
 
-    @Before
     public void init() {
         System.out.println("init Method");
         method = new Method();
