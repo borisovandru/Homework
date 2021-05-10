@@ -1,0 +1,8 @@
+INFO  22:19:30.459 [main] INFO   - 100500 info Hi hell
+WARN  22:19:30.461 [main] WARN   - warn
+ERROR 22:19:30.461 [main] ERROR  - error
+FATAL 22:19:30.461 [main] FATAL  - fatal
+INFO  22:19:30.463 [Thread-0] INFO   - Hello world!
+ERROR 22:19:30.463 [main] ERROR  - Throwing
+java.lang.Exception: EXCEPTION!!!!
+	at ru.geekbrains.lesson14.LoggingExample.main(LoggingExample.java:24) [classes/:?]
